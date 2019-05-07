@@ -4,7 +4,7 @@ version = "0.1.0"
 authors = ["dbr <dbr.onix@gmail.com>"]
 edition = "2018"
 repository = "https://github.com/dbr/easyrand-rs"
-license = "unlicense"
+license = "Unlicense"
 description = "Simpler to use random number library for the Rust language"
 
 [dependencies]
