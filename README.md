@@ -1,6 +1,6 @@
 # `easyrand`
 
-[![Build Status](https://travis-ci.org/dbr/easyrand-rs.svg?branch=master)](https://travis-ci.org/dbr/easyrand-rs)
+[![Build Status](https://travis-ci.org/dbr/easyrand-rs.svg?branch=master)](https://travis-ci.org/dbr/easyrand-rs) [![Documentation](https://docs.rs/easyrand/badge.svg)](https://docs.rs/easyrand)
 
 Simpler to use random number library for the Rust language.
 
