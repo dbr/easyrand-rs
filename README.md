@@ -1,5 +1,7 @@
 # `easyrand`
 
+[![Build Status](https://travis-ci.org/dbr/easyrand-rs.svg?branch=master)](https://travis-ci.org/dbr/easyrand-rs)
+
 Simpler to use random number library for the Rust language.
 
 The library wraps the [`rand`][rand] crate, exposing a smaller API somewhat inspired by the Python [`random`][random] module. Similar in concept to [`reqwest`][reqwest] being a wrapper for the more complex [`hyper`][hyper].
