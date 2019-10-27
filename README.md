@@ -34,3 +34,11 @@ Then to use:
     // Shuffle a vector
     let mut inputs = vec!["a", "b", "c", "d"];
     easyrand::shuffle(&mut inputs);
+
+
+# Release process
+
+1. Ensure tests are passing with `cargo test` and check CI
+2. Verify `CHANGELOG.md` is up to date
+3. Update version number in `Cargo.toml` and `README.md` and commit changes
+4. Run `cargo publish`
