@@ -6,8 +6,19 @@ Simpler to use random number library for the Rust language.
 
 The library wraps the [`rand`][rand] crate, exposing a smaller API somewhat inspired by the Python [`random`][random] module. Similar in concept to [`reqwest`][reqwest] being a wrapper for the more complex [`hyper`][hyper].
 
+[rand]: https://crates.io/crates/rand
+[reqwest]: https://crates.io/crates/reqwest
+[hyper]: https://crates.io/crates/hyper
+[random]: https://docs.python.org/3/library/random.html
 
 # Usage
+
+Add to `Cargo.toml`:
+
+    [dependencies]
+    easyrand="0.1"
+
+Then to use:
 
     extern crate easyrand;
 
@@ -23,9 +34,3 @@ The library wraps the [`rand`][rand] crate, exposing a smaller API somewhat insp
     // Shuffle a vector
     let mut inputs = vec!["a", "b", "c", "d"];
     easyrand::shuffle(&mut inputs);
-
-
-[rand]: https://crates.io/crates/rand
-[reqwest]: https://crates.io/crates/reqwest
-[hyper]: https://crates.io/crates/hyper
-[random]: https://docs.python.org/3/library/random.html
