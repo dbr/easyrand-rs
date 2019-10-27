@@ -16,7 +16,7 @@ The library wraps the [`rand`][rand] crate, exposing a smaller API somewhat insp
 Add to `Cargo.toml`:
 
     [dependencies]
-    easyrand="0.1"
+    easyrand="0.2"
 
 Then to use:
 
@@ -40,5 +40,5 @@ Then to use:
 
 1. Ensure tests are passing with `cargo test` and check CI
 2. Verify `CHANGELOG.md` is up to date
-3. Update version number in `Cargo.toml` and `README.md` and commit changes
+3. Update version number in `Cargo.toml`, `README.md`, `CHANGELOG.md` (and commit changes)
 4. Run `cargo publish`
