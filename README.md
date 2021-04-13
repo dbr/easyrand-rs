@@ -1,8 +1,8 @@
 # `easyrand`
 
-[![Build Status](https://travis-ci.org/dbr/easyrand-rs.svg?branch=master)](https://travis-ci.org/dbr/easyrand-rs) [![Documentation](https://docs.rs/easyrand/badge.svg)](https://docs.rs/easyrand)
+[![Build Status][build_img]][build_link] [![Crates.io version][crate_img]][crate_link] [![Documentation][doc_img]][doc_link]
 
-Simpler to use random number library for the Rust language.
+Simple to use random number library for the Rust language.
 
 The library wraps the [`rand`][rand] crate, exposing a smaller API somewhat inspired by the Python [`random`][random] module. Similar in concept to [`reqwest`][reqwest] being a wrapper for the more complex [`hyper`][hyper].
 
@@ -10,6 +10,13 @@ The library wraps the [`rand`][rand] crate, exposing a smaller API somewhat insp
 [reqwest]: https://crates.io/crates/reqwest
 [hyper]: https://crates.io/crates/hyper
 [random]: https://docs.python.org/3/library/random.html
+
+[build_img]: https://travis-ci.org/dbr/easyrand-rs.svg?branch=master
+[build_link]: https://travis-ci.org/dbr/easyrand-rs
+[doc_img]: https://docs.rs/easyrand/badge.svg
+[doc_link]: https://docs.rs/easyrand
+[crate_img]: https://img.shields.io/crates/v/easyrand
+[crate_link]: https://crates.io/crates/easyrand
 
 # Usage
 
@@ -36,11 +43,6 @@ Then to use:
     easyrand::shuffle(&mut inputs);
 
 
-# Release process
+# Project scope
 
-1. Ensure tests are passing with `cargo test` and check CI
-2. Verify `CHANGELOG.md` is up to date
-3. Update version number in `Cargo.toml`, `README.md`, `CHANGELOG.md` (and commit changes)
-4. Run `cargo publish`
-5. `git tag -a ...` with version number
-6. `git push` and `git push --tags`
+This library is intended to be a small subset of the `rand` library, exposing only the simplest possible useful subset of the library. If you need anything more specific, use the underlying `rand` library.
