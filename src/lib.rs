@@ -72,15 +72,14 @@ impl SeededRand {
     pub fn randint(&mut self, min: i64, max: i64) -> i64 {
         self.rng.gen_range(min..max)
     }
+
     /// In-place shuffle of the given object
-    pub fn shuffle<T>(obj: &mut Vec<T>) {
-        let mut rng = rand::thread_rng();
-        obj.shuffle(&mut rng);
+    pub fn shuffle<T>(&mut self, obj: &mut Vec<T>) {
+        obj.shuffle(&mut self.rng);
     }
 
     /// Return a reference to a randomly selected item in the given object
-    pub fn choose<T>(obj: &Vec<T>) -> Option<&T> {
-        let mut rng = rand::thread_rng();
-        obj.choose(&mut rng)
+    pub fn choose<'a, T>(&mut self, obj: &'a Vec<T>) -> Option<&'a T> {
+        obj.choose(&mut self.rng)
     }
 }
