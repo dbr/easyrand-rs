@@ -145,7 +145,6 @@ fn test_seeded() {
     }
 }
 
-
 #[test]
 fn test_shuffle() {
     for _ in 0..100 {
@@ -165,4 +164,3 @@ fn test_shuffle_seeded() {
         assert_eq!(src, vec![3, 2, 1]);
     }
 }
-
