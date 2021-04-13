@@ -48,8 +48,8 @@ fn test_seeded() {
 
     // Check values are consistent
     assert!(r1.abs() - 0.9728880888443334 < 1e-8);
-    assert!(r2.abs() - 0.5240921244397169 < 1e-8);
-    assert!(r3.abs() - 0.12255363798249008 < 1e-8);
+    assert!(r2.abs() - 0.5427252099031439 < 1e-8);
+    assert!(r3.abs() - 0.6364650991438949 < 1e-8);
 
     // Check same results with new instance
     let mut s2 = with_seed(42);

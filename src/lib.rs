@@ -11,12 +11,12 @@ pub fn random() -> f64 {
 
 /// Returns a random number in the specified range
 pub fn randrange(min: f64, max: f64) -> f64 {
-    rand::thread_rng().gen_range(min, max)
+    rand::thread_rng().gen_range(min..max)
 }
 
 /// Returns a random integer in the specified range
 pub fn randint(min: i64, max: i64) -> i64 {
-    rand::thread_rng().gen_range(min, max)
+    rand::thread_rng().gen_range(min..max)
 }
 
 /// In-place shuffle of the given object
@@ -55,7 +55,7 @@ impl SeededRand {
 
     /// Returns a random number in the specified range
     pub fn randrange(&mut self, min: f64, max: f64) -> f64 {
-        self.rng.gen_range(min, max)
+        self.rng.gen_range(min..max)
     }
 
     /// In-place shuffle of the given object
