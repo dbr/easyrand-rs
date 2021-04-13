@@ -19,6 +19,11 @@ pub fn randint(min: i64, max: i64) -> i64 {
     rand::thread_rng().gen_range(min..max)
 }
 
+// True or false
+pub fn randbool() -> bool {
+    rand::thread_rng().gen()
+}
+
 /// In-place shuffle of the given object
 pub fn shuffle<T>(obj: &mut Vec<T>) {
     let mut rng = rand::thread_rng();
@@ -58,6 +63,15 @@ impl SeededRand {
         self.rng.gen_range(min..max)
     }
 
+    // True or false
+    pub fn randbool(&mut self) -> bool {
+        self.rng.gen()
+    }
+
+    /// Returns a random integer in the specified range
+    pub fn randint(&mut self, min: i64, max: i64) -> i64 {
+        self.rng.gen_range(min..max)
+    }
     /// In-place shuffle of the given object
     pub fn shuffle<T>(obj: &mut Vec<T>) {
         let mut rng = rand::thread_rng();
