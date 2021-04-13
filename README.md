@@ -11,8 +11,8 @@ The library wraps the [`rand`][rand] crate, exposing a smaller API somewhat insp
 [hyper]: https://crates.io/crates/hyper
 [random]: https://docs.python.org/3/library/random.html
 
-[build_img]: https://travis-ci.org/dbr/easyrand-rs.svg?branch=master
-[build_link]: https://travis-ci.org/dbr/easyrand-rs
+[build_img]: https://github.com/dbr/easyrand-rs/actions/workflows/test.yml/badge.svg
+[build_link]: https://github.com/dbr/easyrand-rs/actions/workflows/test.yml
 [doc_img]: https://docs.rs/easyrand/badge.svg
 [doc_link]: https://docs.rs/easyrand
 [crate_img]: https://img.shields.io/crates/v/easyrand
@@ -23,7 +23,7 @@ The library wraps the [`rand`][rand] crate, exposing a smaller API somewhat insp
 Add to `Cargo.toml`:
 
     [dependencies]
-    easyrand="0.2"
+    easyrand="0.4"
 
 Then to use:
 
