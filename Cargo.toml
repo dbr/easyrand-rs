@@ -1,6 +1,6 @@
 [package]
 name = "easyrand"
-version = "0.2.0"
+version = "0.3.0"
 authors = ["dbr <dbr.onix@gmail.com>"]
 edition = "2018"
 repository = "https://github.com/dbr/easyrand-rs"
